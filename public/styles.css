@@ -1,0 +1,1016 @@
+body {
+    font-family: 'Arial';
+    margin: 0;
+    padding: 0;
+    background-color: #3b3b3b;
+    background-image: url(https://storage.googleapis.com/mb-mkt-neo-prod-1-uploads/Refocus_on_women_empowerment_3993348c8f/Refocus_on_women_empowerment_3993348c8f.jpg);
+    background-size: cover; 
+    
+}
+
+
+header {
+    background-color: rgb(230, 152, 165);
+    padding: 1rem 2rem;
+    position: relative; /* Allows us to position the buttons absolutely within the header */
+    z-index: 50;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content h1 {
+    color: white;
+    margin: 0;
+    flex-grow: 1; /* This ensures the title takes up as much space as possible, effectively pushing the buttons to the center */
+}
+
+.header h1 {
+    color: #fff;
+    margin: 0; /* Remove margin */
+    text-align: center;/* Optional: Add some padding to the left of the heading */
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Creates equal spacing between the buttons */
+    position: absolute; /* Position buttons absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+}
+
+.buttons button {
+    height: 50px;
+    width: 150px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: rgb(230, 152, 165);
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: rgb(202, 108, 124);
+}
+
+#createBtn {
+    font-size: 1.5rem; /* Increase the font size */
+    background-color: #f39c12; /* Existing color */
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Increase padding to make the button larger */
+    border-radius: 0.5rem; /* Slightly larger rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; 
+    margin: 1rem auto; 
+    margin-left: 50px; /* Move it 50px to the right */
+    margin-right: auto;
+    z-index: 50;
+}
+
+#createBtn:hover {
+    background-color: #d35400; /* A darker shade for hover effect. Adjust as needed */
+}
+
+#cancelBtn {
+    font-size: 1.5rem; /* Increase the font size */
+    background-color: #f39c12; /* Existing color */
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Increase padding to make the button larger */
+    border-radius: 0.5rem; /* Slightly larger rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; 
+    margin: 1rem auto; 
+    margin-left: auto; /* Move it 50px to the right */
+    margin-right: 50px;
+}
+
+#cancelBtn:hover {
+    background-color: #d35400; /* A darker shade for hover effect. Adjust as needed */
+}
+
+button[type="cancel"] {
+    background-color: #D689AB;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 450px;
+}
+
+.task-buttons {
+    margin-left: 10px;
+}
+
+.large-title-backlog {
+    font-size: 2.5rem;   /* Making the font size 3 times the default size. Adjust as necessary */
+    color: white;     /* Color of the title. Adjust if needed */
+    text-align: center; /* Center align the title */
+    margin: 2rem 0;    /* Add some margin for spacing around the title */
+    font-weight: bold;  /* Makes the text bold */
+    margin-top: -30px;
+    position: absolute;
+    top: 18%;  /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%); /* This ensures the title is centered horizontally */
+    z-index: 50;
+}
+
+.large-title-manage {
+    font-size: 3rem;   /* Making the font size 3 times the default size. Adjust as necessary */
+    color: white;     /* Color of the title. Adjust if needed */
+    text-align: center; /* Center align the title */
+    margin: 2rem 0;    /* Add some margin for spacing around the title */
+    font-weight: bold;  /* Makes the text bold */
+    margin-top: 10px;
+}
+
+.large-title-participants {
+    font-size: 3rem;   /* Making the font size 3 times the default size. Adjust as necessary */
+    color: white;     /* Color of the title. Adjust if needed */
+    text-align: center; /* Center align the title */
+    margin: 2rem 0;    /* Add some margin for spacing around the title */
+    font-weight: bold;  /* Makes the text bold */
+    margin-top: 10px;
+}
+
+.participants-list {
+    background-color: #b73da5;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 800px;  /* Adjust width as needed */
+    margin: 1rem auto;  /* Centers the div */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Optional shadow for depth */
+}
+
+.participants-list h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.participants-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.participants-list li {
+    background-color: #f2f2f2;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: #333;
+}
+
+.participants-list li:last-child {
+    margin-bottom: 0;
+}
+
+.chartContainer {
+    background-color: #D562BA;
+    border-radius: 10px;
+    padding: 20px;
+    width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+.task-block {
+    background-color: #70cf31;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Set a fixed width for tasks. Adjust if necessary */
+    height: 300px; /* Set a fixed height for tasks. Adjust if necessary */
+}
+
+.task-block:hover {
+    background-color: #70cf31cc; 
+    cursor: pointer;         
+}
+
+.enlarged-task:hover {
+    background-color: white; /* Resetting it for the enlarged version */
+}
+
+.enlarged-task {
+    transform: scale(1.5); /* Enlarge the task by 1.5 times */
+    position: fixed; /* Fixed positioning to center it on the screen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Ensures the task appears above other content */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* A subtle shadow for emphasis */
+}
+
+.task-number {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+}
+
+.task-container {
+    gap: 40px;
+    display: flex;
+    flex-wrap: wrap; /* Allow tasks to wrap to the next row */
+    justify-content: center; /* Center tasks horizontally */
+    margin: 50px 0; /* Some space above and below the task container */
+}
+
+.task-story-points {
+    /* border: 2px solid #CD4444; */
+    float: left;
+    /* padding: 10px; */
+    border-top-left-radius: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.task-name {
+    float: left;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    line-height: 40px;
+    padding-left: 20px;
+}
+
+.high-task {
+    width: 100%;
+    height: 40px; /* Adjust the height to fit the task name */
+    background-color: #CD4444; /* Task color */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.medium-task {
+    width: 100%;
+    height: 40px; /* Adjust the height to fit the task name */
+    background-color: #EBBE1F; /* Task color */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.low-task {
+    width: 100%;
+    height: 40px; /* Adjust the height to fit the task name */
+    background-color: #2B9C03; /* Task color */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.task {
+    box-shadow: 5px 5px 10px rgb(27, 27, 27);
+    width: 250px;
+    height: 180px; /* Adjust the height to fit the task name */
+    background-color: rgb(46, 46, 46);/* Task color */
+    border-radius: 10px;
+    margin: 10px; /* Add margin around tasks */
+    z-index: 50;
+    /* Center-align the task content */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+}
+
+.task:hover{
+    filter: brightness(85%)
+}  
+
+.task-details {
+    display: flex; /* Use flexbox to control positioning */
+    align-items: center; /* Vertically align items in the task details container */
+}
+
+.task-description {
+    line-height: 20px;
+    margin-left: 10px;
+    text-align: left;
+    font-size: 15px;
+    color: white;
+    width: 230px;
+    height: 100px;
+    word-wrap: break-word;
+    overflow-y: hidden;
+}
+
+.story-point {
+    margin-left: 5px; /* Add some spacing between task name and story point */
+    color: #fff; /* Text color for the story point */
+    padding: 2px 5px; /* Add padding for the story point */
+    font-size: 20px; /* Adjust font size for the story point */
+    font-weight: bold;
+}
+
+.tags-container {
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 100%;
+}
+
+.tag {
+    float: left;
+    background-color: #f0f0f0; /* Background color for tags */
+    color: #333; /* Text color for tags */
+    padding: 3px 8px; /* Adjust padding as needed */ 
+    margin: 3px 3px; /* Adjust the margin between tags */
+    border-radius: 5px; /* Add rounded corners to tags */
+    font-size: 12px; /* Adjust the font size as needed */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 20%;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    /* justify-content: center; */
+    /* align-items: center; */
+    z-index: 9999; /* Ensure a high z-index value */
+}
+
+.modal-content {
+    width: 40%;
+    margin: auto;
+    height: 500px;
+    border-radius: 10px;
+    background-color: rgb(87, 87, 87);
+}
+
+.page-mask {
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 70;
+}
+
+.page-mask2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.view-high-task {
+    width: 100%;
+    height: 70px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #CD4444;
+}
+
+.view-medium-task {
+    width: 100%;
+    height: 70px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #EBBE1F;
+}
+
+.view-low-task {
+    width: 100%;
+    height: 70px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #2B9C03;
+}
+
+.view-task-name {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 40px;
+    height: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: 550;
+    line-height: 30px;
+}
+
+.view-task-name p {
+    margin-left: 45px;
+}
+
+.view-task-name img {
+    float: left;
+    width: 27px;
+    height: 27px;
+}
+
+.view-task-story-points {
+    float: left;
+    background-color: white;
+    border-top-left-radius: 10px;
+    height: 70px;
+    width: 70px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.view-task-tag-container {
+    height: 20px;
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.view-task-tag-container p {
+    float: left;
+    color: white;
+    margin-right: 10px;
+}
+
+.view-task-tag {
+    height: 20px;
+    float: left;
+    background-color: #f0f0f0; /* Background color for tags */
+    color: #333; /* Text color for tags */
+    padding: 5px 10px; /* Adjust padding as needed */ 
+    margin: 10px 7px; /* Adjust the margin between tags */
+    border-radius: 10px; /* Add rounded corners to tags */
+    font-size: 15px; /* Adjust the font size as needed */
+    line-height: 20px;
+}
+
+.view-task-description {
+    color: white;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.view-task-description h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.view-task-button-container {
+    margin-left: 40px;
+}
+
+.edit-task-button {
+    height: 30px;
+    width: 50px;
+    background-color: #f39c12;
+    line-height: 30px;
+    font-size: 16px;
+    color: white;
+    border: none;
+}
+
+.close-button {
+    float: right; 
+    height: 70px;
+    width: 70px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.close-button img {
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+.close-button:hover {
+    filter: brightness(85%)
+}
+
+.modal-content h2 {
+    color: white;
+    width: 500px;
+}
+
+ /* Style the dropdown container */
+.dropdown {
+    float: right;
+    position: relative;
+    right: 50px;
+    z-index: 60;
+
+}
+
+/* Style the dropdown button */
+.dropbtn {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px;
+    z-index: 50;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f39c12;
+    border-radius: 5px;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #d35400;
+}
+
+/* Show the dropdown content when the button is clicked */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #d35400;
+} 
+
+.button-container {
+    margin-top: 25px;
+    display: flex;
+    align-items: center; /* Vertically center the button and dropdown */
+}
+
+.switch-button-container {
+    display: flex;
+    align-items: center; /* Vertically center the button and dropdown */
+    position: fixed;
+    right: 0px;
+    bottom: 40px;
+    z-index: 50;
+}
+
+/* Style for the participant container */
+.participant-container {
+    display: flex;
+    justify-content: space-between; /* Align items to the left and right */
+    align-items: center; /* Vertically center items */
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+}
+
+/* Style for the "Analyze" button */
+.analyze-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px; /* Add margin to separate buttons */
+}
+
+/* Style for the "Remove" button */
+.remove-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Style for the button container */
+.button-container {
+    display: flex;
+}
+
+  
+/* The container <div> - needed to position the dropup content */
+.dropup {
+    position: fixed;
+    display: inline-block;
+    right: 50px;
+    bottom: 40px;
+}
+
+/* Dropup content (Hidden by Default) */
+.dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 38px;
+    background-color: #f39c12;
+    border-radius: 5px;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+/* Links inside the dropup */
+.dropup-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropup links on hover */
+.dropup-content a:hover {background-color: #d35400;}
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropup-content {
+    display: block;
+}
+
+/* Change the background color of the dropup button when the dropup content is shown */
+.dropup:hover .dropbtn {
+    background-color: #d35400;
+} 
+
+
+
+
+/* Sprint Backlog stuff */
+
+.sprint-tasks-container {
+    border-radius: 0.3rem;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between tasks */
+    margin: 20px 0; /* Some space above and below the task container */
+    margin-left: 100px;
+    width: 24.5%;
+    background-color: #df52c9;
+    padding: 15px;
+    padding-bottom: 300px;
+}
+
+.sprint-tasks-container h1 {
+    width: 500px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+
+/* Manage Sprint */
+
+.pb-tasks-container {
+    border-radius: 0.3rem;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px; /* Space between tasks */
+    margin: 20px 0;
+    margin-left: 100px;
+    width: 25%;
+    height: 100vh;
+    background-color: #df52c9;
+    justify-content: center;
+    padding: 15px;
+}
+
+.pb-tasks-container h1 {
+    width: 400px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.sb-tasks-container {
+    justify-content: center;
+    border-radius: 0.3rem;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px; /* Space between tasks */
+    margin: 20px 0; /* Some space above and below the task container */
+    margin-left: 100px;
+    width: 25%;
+    height: 100vh;
+    background-color: #df52c9;
+    padding: 15px;
+}
+
+.sb-tasks-container h1 {
+    width: 700px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+
+.pb-high-task {
+    width: 350px;
+    height: 50px; /* Adjust the height to fit the task name */
+    background-color: #CD4444; /* Task color */
+    margin: 3px; /* Add margin around tasks */
+    text-align: center; /* Center-align the task content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pb-medium-task {
+    width: 350px;
+    height: 50px; /* Adjust the height to fit the task name */
+    background-color: #EBBE1F; /* Task color */
+    margin: 3px; /* Add margin around tasks */
+    text-align: center; /* Center-align the task content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pb-low-task {
+    width: 350px;
+    height: 50px; /* Adjust the height to fit the task name */
+    background-color: #2B9C03; /* Task color */
+    margin: 3px; /* Add margin around tasks */
+    text-align: center; /* Center-align the task content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pb-task-details {
+    margin-top: 5px;
+    display: flex; /* Use flexbox to control positioning */
+    align-items: center; /* Vertically align items in the task details container */
+}
+
+.pb-task-name {
+    width: 79%;
+    background-color: #ccc; /* Gray background for the task name */
+    padding: 5px; /* Add padding within the gray rectangle */
+    font-weight: bold;
+    color: #555; /* Task name color */
+    height: 30px;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.pb-task-description {
+    padding: 10px; /* Add padding for the task description */
+}
+
+.pb-story-point {
+    margin-left: 5px; /* Add some spacing between task name and story point */
+    margin-right: 5px;
+    color: #fff; /* Text color for the story point */
+    padding: 2px 5px; /* Add padding for the story point */
+    font-size: 20px; /* Adjust font size for the story point */
+    font-weight: bold;
+}
+
+.pb-task-buttons button {
+    margin: 5px;
+}
+
+
+
+.sb-high-task {
+    width: 600px;
+    height: 50px; /* Adjust the height to fit the task name */
+    background-color: #CD4444; /* Task color */
+    margin: 10px; /* Add margin around tasks */
+    text-align: center; /* Center-align the task content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sb-medium-task {
+    width: 600px;
+    height: 50px; /* Adjust the height to fit the task name */
+    background-color: #EBBE1F; /* Task color */
+    margin: 10px; /* Add margin around tasks */
+    text-align: center; /* Center-align the task content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sb-low-task {
+    width: 600px;
+    height: 50px; /* Adjust the height to fit the task name */
+    background-color: #2B9C03; /* Task color */
+    margin: 10px; /* Add margin around tasks */
+    text-align: center; /* Center-align the task content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sb-task-details {
+    margin-top: 5px;
+    display: flex; /* Use flexbox to control positioning */
+    align-items: center; /* Vertically align items in the task details container */
+}
+
+.sb-task-name {
+    width: 85%;
+    background-color: #ccc; /* Gray background for the task name */
+    padding: 5px; /* Add padding within the gray rectangle */
+    font-weight: bold;
+    color: #555; /* Task name color */
+    height: 30px;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.sb-task-description {
+    padding: 10px; /* Add padding for the task description */
+}
+
+.sb-story-point {
+    margin-left: 5px; /* Add some spacing between task name and story point */
+    margin-right: 5px;
+    color: #fff; /* Text color for the story point */
+    padding: 2px 5px; /* Add padding for the story point */
+    font-size: 20px; /* Adjust font size for the story point */
+    font-weight: bold;
+}
+
+.sb-task-buttons button {
+    margin-left: 15px;
+}
+
+.story-points-container {
+    width: 200px;
+    background-color: #df52c9;
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+    right: 100px;
+    padding: 25px;
+}
+
+.story-points-container h1 {
+    font-size: 25px;
+    color: white;
+}
+
+.story-points-container p {
+    margin: auto;
+    width: 50%;
+    font-size: 25px;
+    border-radius: 5px;
+    color: white;
+    background-color: #f386e3;
+    padding: 10px;
+}
+
+.date-container {
+    width: 200px;
+    background-color: #df52c9;
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+    right: 100px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.date-container h1 {
+    font-size: 25px;
+    color: white;
+}
+
+.date-container p {
+    margin: auto;
+    width: 70%;
+    font-size: 25px;
+    border-radius: 5px;
+    color: white;
+    background-color: #f386e3;
+    padding: 10px;
+}
+
+.styled-image {
+    width: 300px; /* set width */
+    height: auto; /* maintain aspect ratio */
+    border: 3px solid black; /* add a border */
+    border-radius: 15px; /* round the corners */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* add a shadow */
+    display: block; /* to apply margin auto for centering */
+    position: fixed;
+    left: 50px;
+    top: 100px;
+
+    
+}
+
+.styled-image2 {
+    width: 300px; /* set width */
+    height: auto; /* maintain aspect ratio */
+    border: 3px solid black; /* add a border */
+    border-radius: 15px; /* round the corners */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* add a shadow */
+    display: block; /* to apply margin auto for centering */
+    position: fixed;
+    left: 1500px;
+    top: 100px;
+    
+}
+
+/* Style the table */
+h2.table-title {
+    color: white;
+}
+
+#sprintTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Style the table header (thead) */
+#sprintTable thead {
+    background-color: #333;
+    color: #fff;
+}
+
+#sprintTable th {
+    padding: 10px;
+}
+
+/* Style the table rows (tbody) */
+#sprintTable tbody {
+    background-color: #f2f2f2;
+}
+
+#sprintTable tr:nth-child(even) {
+    background-color: #fff;
+}
+
+#sprintTable td {
+    padding: 10px;
+}
+
+/* Style the "Edit" button in the table */
+#sprintTable button {
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.table-manage-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.manage-button:hover {
+    background-color: #45a049;
+}
+
+.table-remove-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    background-color: darkred;
+}
